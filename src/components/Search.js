@@ -12,11 +12,12 @@ function Search({ setSearchResults }) {
 
     return (
         <div className="search">
-        <form className="search-form" onSubmit={handleSubmit}>
-        <input  className="search-input" type="text" onChange={(e) => setValue(e.target.value)}></input>
-        <button className="search-button" type="submit">Search</button>
-        </form>
+            <form className="search-form" onSubmit={handleSubmit}>
+               <input  className="search-input" type="text" onChange={(e) => setValue(e.target.value)}></input>
+               <button className="search-button" type="submit">Search</button>
+           </form>
         </div>
-    )
-}
+    );
+};
+
 export default Search;
