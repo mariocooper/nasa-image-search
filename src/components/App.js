@@ -5,7 +5,6 @@ import SearchResults from "./SearchResults";
 
 function App() {
   const [searchResults, setSearchResults] = useState();
-  console.log(searchResults);
   return (
     <div className="app">
       <img 
