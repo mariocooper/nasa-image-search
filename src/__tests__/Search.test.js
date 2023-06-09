@@ -4,16 +4,11 @@ import Search from "../components/Search";
 import "@testing-library/jest-dom"
 
 describe("Search", () => {
-    const validProps = {
-        onChange: jest.fn(),
-        setValue: "moon",
-        setSearchResults: jest.fn(),
-        onSubmit: jest.fn()
-    }
     const { asFragment } = render(<Search />);
 
     it("renders correctly", () => {
-        expect(asFragment()).toMatchSnapshot();        });
+        expect(asFragment()).toMatchSnapshot();        
+    });
 
     it("renders a search box", () => {
         render(< Search />);
